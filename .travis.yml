@@ -1,0 +1,9 @@
+language: generic
+deploy:
+  provider: s3
+  access_key_id: $access_key_id
+  secret_access_key: $secret_access_key
+  bucket: "travisdemo"
+  region: us-east-1
+  on:
+    repo: danielmartincraig/travisDemo
